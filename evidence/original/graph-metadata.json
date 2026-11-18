@@ -1,0 +1,107 @@
+[
+  {
+    "degreeDistribution": {
+      "min": 1,
+      "max": 1699,
+      "p90": 1,
+      "p999": 246,
+      "p99": 26,
+      "p50": 1,
+      "p75": 1,
+      "p95": 2,
+      "mean": 2.392678698888549
+    },
+    "graphName": "apt_paper_s1_graph_v2",
+    "database": "neo4j",
+    "databaseLocation": "local",
+    "memoryUsage": "11483 KiB",
+    "sizeInBytes": 11758664,
+    "nodeCount": 58842,
+    "relationshipCount": 140790,
+    "configuration": {
+      "relationshipProjection": {
+        "HAS_APT_GROUP": {
+          "aggregation": "DEFAULT",
+          "orientation": "UNDIRECTED",
+          "indexInverse": false,
+          "properties": {},
+          "type": "HAS_APT_GROUP"
+        },
+        "HAS_IOC": {
+          "aggregation": "DEFAULT",
+          "orientation": "UNDIRECTED",
+          "indexInverse": false,
+          "properties": {},
+          "type": "HAS_IOC"
+        },
+        "KNOWN_AS": {
+          "aggregation": "DEFAULT",
+          "orientation": "UNDIRECTED",
+          "indexInverse": false,
+          "properties": {},
+          "type": "KNOWN_AS"
+        }
+      },
+      "readConcurrency": 4,
+      "relationshipProperties": {},
+      "nodeProperties": {},
+      "jobId": "bda8e7a4-21cb-4bb9-a266-5e1ec41128d2",
+      "nodeProjection": {
+        "BaselineGroup": {
+          "label": "BaselineGroup",
+          "properties": {}
+        },
+        "BaselineIoC": {
+          "label": "BaselineIoC",
+          "properties": {}
+        },
+        "BaselineReport": {
+          "label": "BaselineReport",
+          "properties": {}
+        }
+      },
+      "logProgress": true,
+      "creationTime": "2026-11-17T20:29:31.109129900+00:00",
+      "validateRelationships": false,
+      "sudo": false
+    },
+    "density": 4.066346083323786e-05,
+    "creationTime": "2026-11-17T20:29:31.109129900+00:00",
+    "modificationTime": "2026-11-17T20:58:25.926233900+00:00",
+    "schema": {
+      "graphProperties": {},
+      "nodes": {
+        "BaselineGroup": {},
+        "BaselineIoC": {},
+        "BaselineReport": {}
+      },
+      "relationships": {
+        "HAS_APT_GROUP": {},
+        "HAS_IOC": {},
+        "KNOWN_AS": {}
+      }
+    },
+    "schemaWithOrientation": {
+      "graphProperties": {},
+      "nodes": {
+        "BaselineGroup": {},
+        "BaselineIoC": {},
+        "BaselineReport": {}
+      },
+      "relationships": {
+        "HAS_APT_GROUP": {
+          "direction": "UNDIRECTED",
+          "properties": {}
+        },
+        "HAS_IOC": {
+          "direction": "UNDIRECTED",
+          "properties": {}
+        },
+        "KNOWN_AS": {
+          "direction": "UNDIRECTED",
+          "properties": {}
+        }
+      }
+    }
+  }
+]

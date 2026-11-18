@@ -1,0 +1,76 @@
+[
+  {
+    "pipelineInfo": {
+      "splitConfig": {
+        "testFraction": 0.2,
+        "validationFolds": 7,
+        "trainFraction": 0.25,
+        "negativeSamplingRatio": 1.0
+      },
+      "autoTuningConfig": {
+        "maxTrials": 10
+      },
+      "featurePipeline": {
+        "nodePropertySteps": [
+          {
+            "name": "gds.fastRP.mutate",
+            "config": {
+              "randomSeed": 42,
+              "contextRelationshipTypes": [
+                "HAS_IOC",
+                "KNOWN_AS"
+              ],
+              "mutateProperty": "paperEmbedding",
+              "concurrency": 1,
+              "nodeSelfInfluence": 0.0,
+              "iterationWeights": [
+                0.0,
+                1.0,
+                1.0
+              ],
+              "normalizationStrength": 0.0,
+              "embeddingDimension": 128,
+              "contextNodeLabels": [
+                "BaselineIoC"
+              ]
+            }
+          }
+        ],
+        "featureSteps": [
+          {
+            "name": "HADAMARD",
+            "config": {
+              "nodeProperties": [
+                "paperEmbedding"
+              ]
+            }
+          }
+        ]
+      },
+      "trainingParameterSpace": {
+        "MultilayerPerceptron": [
+          {
+            "minEpochs": 1,
+            "maxEpochs": 100,
+            "focusWeight": 0.0,
+            "patience": 1,
+            "tolerance": 0.001,
+            "learningRate": 0.001,
+            "hiddenLayerSizes": [
+              100
+            ],
+            "batchSize": 100,
+            "penalty": 0.0,
+            "methodName": "MultilayerPerceptron",
+            "classWeights": []
+          }
+        ],
+        "RandomForest": [],
+        "LogisticRegression": []
+      }
+    },
+    "pipelineName": "apt_paper_s1_mlp_pipeline_v2",
+    "pipelineType": "Link prediction training pipeline",
+    "creationTime": "2026-11-17T20:50:30.253418100+00:00"
+  }
+]

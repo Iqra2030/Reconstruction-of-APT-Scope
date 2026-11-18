@@ -1,0 +1,137 @@
+[
+  {
+    "modelName": "apt_paper_s1_rf_v2",
+    "modelType": "LinkPrediction",
+    "modelInfo": {
+      "metrics": {
+        "AUCPR": {
+          "test": 0.6787731407329292,
+          "validation": {
+            "min": 0.5872067760679028,
+            "max": 0.8068568370998839,
+            "avg": 0.7215792036232614
+          },
+          "outerTrain": 0.8138126958695643,
+          "train": {
+            "min": 0.7846780263556931,
+            "max": 0.8446617564178228,
+            "avg": 0.8215944685559423
+          }
+        }
+      },
+      "pipeline": {
+        "nodePropertySteps": [
+          {
+            "name": "gds.fastRP.mutate",
+            "config": {
+              "randomSeed": 42,
+              "contextRelationshipTypes": [
+                "HAS_IOC",
+                "KNOWN_AS"
+              ],
+              "mutateProperty": "paperEmbedding",
+              "concurrency": 1,
+              "nodeSelfInfluence": 0.0,
+              "iterationWeights": [
+                0.0,
+                1.0,
+                1.0
+              ],
+              "normalizationStrength": 0.0,
+              "embeddingDimension": 128,
+              "contextNodeLabels": [
+                "BaselineIoC"
+              ]
+            }
+          }
+        ],
+        "featureSteps": [
+          {
+            "name": "HADAMARD",
+            "config": {
+              "nodeProperties": [
+                "paperEmbedding"
+              ]
+            }
+          }
+        ]
+      },
+      "bestParameters": {
+        "maxDepth": 2147483647,
+        "criterion": "GINI",
+        "minSplitSize": 2,
+        "minLeafSize": 1,
+        "numberOfSamplesRatio": 1.0,
+        "methodName": "RandomForest",
+        "numberOfDecisionTrees": 100
+      },
+      "nodePropertySteps": [
+        {
+          "name": "gds.fastRP.mutate",
+          "config": {
+            "randomSeed": 42,
+            "contextRelationshipTypes": [
+              "HAS_IOC",
+              "KNOWN_AS"
+            ],
+            "mutateProperty": "paperEmbedding",
+            "concurrency": 1,
+            "nodeSelfInfluence": 0.0,
+            "iterationWeights": [
+              0.0,
+              1.0,
+              1.0
+            ],
+            "normalizationStrength": 0.0,
+            "embeddingDimension": 128,
+            "contextNodeLabels": [
+              "BaselineIoC"
+            ]
+          }
+        }
+      ],
+      "featureSteps": [
+        {
+          "name": "HADAMARD",
+          "config": {
+            "nodeProperties": [
+              "paperEmbedding"
+            ]
+          }
+        }
+      ]
+    },
+    "creationTime": "2026-11-18T01:46:15.078192800+05:00",
+    "trainConfig": {
+      "randomSeed": 42,
+      "targetRelationshipType": "HAS_APT_GROUP",
+      "jobId": "cee29aa1-70f4-4f39-8feb-2a088925d7ad",
+      "graphName": "apt_paper_s1_graph_v2",
+      "sudo": false,
+      "negativeClassWeight": 1.0,
+      "storeModelToDisk": false,
+      "modelName": "apt_paper_s1_rf_v2",
+      "logProgress": true,
+      "metrics": [
+        "AUCPR"
+      ],
+      "pipeline": "apt_paper_s1_rf_pipeline_v2",
+      "concurrency": 1,
+      "sourceNodeLabel": "BaselineReport",
+      "targetNodeLabel": "BaselineGroup"
+    },
+    "graphSchema": {
+      "graphProperties": {},
+      "nodes": {
+        "BaselineGroup": {},
+        "BaselineReport": {}
+      },
+      "relationships": {
+        "HAS_APT_GROUP": {}
+      }
+    },
+    "loaded": true,
+    "stored": false,
+    "published": false
+  }
+]

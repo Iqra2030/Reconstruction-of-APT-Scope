@@ -1,0 +1,31 @@
+﻿{
+  "experiment": "apt_paper_s1_lr_v2",
+  "status": "approximate reconstruction",
+  "model": "LogisticRegression",
+  "metric": "GDS AUCPR",
+  "averageTrain": 0.7968379670755631,
+  "outerTrain": 0.7963117150271443,
+  "averageValidation": 0.7677588596810082,
+  "test": 0.796089685404216,
+  "trainMillis": 1695,
+  "testFraction": 0.2,
+  "trainFractionOfTestComplement": 0.25,
+  "validationFolds": 7,
+  "negativeSamplingRatio": 1.0,
+  "randomSeed": 42,
+  "embeddingDimension": 128,
+  "iterationWeights": [0.0, 1.0, 1.0],
+  "timestampFeatureIncluded": false,
+  "aliasContextIncluded": true,
+  "modelConfiguration": {
+    "minEpochs": 1,
+    "maxEpochs": 100,
+    "focusWeight": 0.0,
+    "patience": 1,
+    "tolerance": 0.001,
+    "learningRate": 0.001,
+    "batchSize": 100,
+    "penalty": 0.0,
+    "classWeights": []
+  }
+}

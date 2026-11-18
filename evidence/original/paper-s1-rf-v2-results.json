@@ -1,0 +1,31 @@
+﻿{
+  "experiment": "apt_paper_s1_rf_v2",
+  "status": "approximate reconstruction",
+  "model": "RandomForest",
+  "metric": "GDS AUCPR",
+  "averageTrain": 0.8215944685559423,
+  "outerTrain": 0.8138126958695643,
+  "averageValidation": 0.7215792036232614,
+  "test": 0.6787731407329292,
+  "trainMillis": 16509,
+  "testFraction": 0.2,
+  "trainFractionOfTestComplement": 0.25,
+  "validationFolds": 7,
+  "negativeSamplingRatio": 1.0,
+  "randomSeed": 42,
+  "concurrency": 1,
+  "embeddingDimension": 128,
+  "iterationWeights": [0.0, 1.0, 1.0],
+  "nodeSelfInfluence": 0.0,
+  "normalizationStrength": 0.0,
+  "timestampFeatureIncluded": false,
+  "aliasContextIncluded": true,
+  "modelConfiguration": {
+    "maxDepth": 2147483647,
+    "criterion": "GINI",
+    "minSplitSize": 2,
+    "minLeafSize": 1,
+    "numberOfSamplesRatio": 1.0,
+    "numberOfDecisionTrees": 100
+  }
+}

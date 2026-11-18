@@ -1,0 +1,15 @@
+{
+  "apt_paper_s1_lr_v2-model-metadata.json": "65f707c91700add3596758c147a563c0656cf03a077bd7a3fcca3f4aa78a6b9e",
+  "apt_paper_s1_mlp_pipeline_v2-pipeline.json": "f813bd99e73d04f174f9df61b3d41f86fcd6191f6047a7bfd9bcfeb5e5692f9a",
+  "apt_paper_s1_mlp_v2-model-metadata.json": "fb0d77253bf860fe292d73c6fafef1e16f67c58cb96d470852a64d1a767d03f1",
+  "apt_paper_s1_rf_pipeline_v2-pipeline.json": "c0b436fd009e268d2eeb9281ea4b8fefbc0b5e2a0fcbfd0af2df8d4ae7c8beed",
+  "apt_paper_s1_rf_v2-model-metadata.json": "5943a02e133a8b311092887e9009429e9e08d96fb3bd6f3694984ba7dd29365a",
+  "apt_paper_s1_v2-pipeline.json": "f7a74c4656dc1fb32c4bdae4ff4251a2ce4eaf289db434a9b4f8b07020459bdc",
+  "export_paper_s1_evidence.py": "0edc91ce5e7cf6203ef2c46118505504aebf7150e904d1333646cfc0a0b5492c",
+  "graph-metadata.json": "a211c51919268a64a19b87d421b61ebf581e349fd3c71ef248c6c77db2908af3",
+  "paper-s1-lr-v2-results.json": "390d7d3c81ade004602e885f7ef7b9e7c3ff323e4fd8738e4845d15e359e8117",
+  "paper-s1-mlp-v2-results.json": "e811b6804bcfc1cd55773395ab9dee9f2768f787f1fb1315c52d7991dafe0601",
+  "paper-s1-rf-v2-results.json": "f8ab0aa46bbfb6e4c6122e503a2ee77589880670049acd9fcf0208e9a2b44d49",
+  "paper-s1-v2-comparison.csv": "685f0d778022eb4a1e69bae6cd7b564142ff387228ddd4326d7d1c21ed22f313",
+  "software-versions.json": "6f4cdc1b648c7c47c69c19fe48f618a386ef515a2e7f62797a6a68c55a73b94d"
+}

@@ -1,0 +1,16 @@
+{
+  "neo4j": [
+    {
+      "name": "Neo4j Kernel",
+      "versions": [
+        "5.13.0"
+      ],
+      "edition": "community"
+    }
+  ],
+  "gds": [
+    {
+      "version": "2.6.0"
+    }
+  ]
+}

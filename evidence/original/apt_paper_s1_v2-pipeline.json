@@ -1,0 +1,73 @@
+[
+  {
+    "pipelineInfo": {
+      "splitConfig": {
+        "testFraction": 0.2,
+        "validationFolds": 7,
+        "trainFraction": 0.25,
+        "negativeSamplingRatio": 1.0
+      },
+      "autoTuningConfig": {
+        "maxTrials": 10
+      },
+      "featurePipeline": {
+        "nodePropertySteps": [
+          {
+            "name": "gds.fastRP.mutate",
+            "config": {
+              "randomSeed": 42,
+              "contextRelationshipTypes": [
+                "HAS_IOC",
+                "KNOWN_AS"
+              ],
+              "mutateProperty": "paperEmbedding",
+              "concurrency": 1,
+              "nodeSelfInfluence": 0.0,
+              "iterationWeights": [
+                0.0,
+                1.0,
+                1.0
+              ],
+              "normalizationStrength": 0.0,
+              "embeddingDimension": 128,
+              "contextNodeLabels": [
+                "BaselineIoC"
+              ]
+            }
+          }
+        ],
+        "featureSteps": [
+          {
+            "name": "HADAMARD",
+            "config": {
+              "nodeProperties": [
+                "paperEmbedding"
+              ]
+            }
+          }
+        ]
+      },
+      "trainingParameterSpace": {
+        "MultilayerPerceptron": [],
+        "RandomForest": [],
+        "LogisticRegression": [
+          {
+            "minEpochs": 1,
+            "maxEpochs": 100,
+            "focusWeight": 0.0,
+            "patience": 1,
+            "tolerance": 0.001,
+            "learningRate": 0.001,
+            "batchSize": 100,
+            "penalty": 0.0,
+            "methodName": "LogisticRegression",
+            "classWeights": []
+          }
+        ]
+      }
+    },
+    "pipelineName": "apt_paper_s1_v2",
+    "pipelineType": "Link prediction training pipeline",
+    "creationTime": "2026-11-17T20:23:47.867850800+00:00"
+  }
+]
