@@ -112,17 +112,7 @@ KNOWN_AS links were derived from group names appearing together in source annota
 
 The paper describes trapezoidal precision–recall area [1, p. 9]. This run records GDS AUCPR. We have not independently recalculated that metric from saved test predictions or verified its tie handling against the authors’ implementation. It must not be relabelled as scikit-learn average precision.
 
-Recommended next steps
 
-Freeze v2 results and retain the original evidence archive. Do not tune these models using the observed test scores.
-
-Preserve the baseline database or a complete node-and-relationship export, source file hashes, preprocessing scripts and a runnable reconstruction script. Catalogue metadata alone cannot restore trained models.
-
-Request the original report manifest, historical graph snapshot, timestamps, training code, negative-sampling settings, split interpretation and candidate parameter spaces from the authors.
-
-If original artifacts remain unavailable, present this as an approximate reconstruction. Treat alias removal, alternative split interpretations and multiple seeds as separately specified follow-up experiments, not corrections selected to improve the existing test score.
-
-Keep Scenario 2 enrichment and unknown-report/alias prediction outputs outside the completed scope until they are implemented and evaluated separately.
 
 References and evidence
 
