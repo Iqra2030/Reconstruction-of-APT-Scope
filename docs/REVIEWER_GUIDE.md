@@ -22,8 +22,4 @@
 | Test independence limits | Audit and limitations documents | Link split, not report/campaign split |
 | Proposed extension status | `docs/FUTURE_WORK.md` | STIX classifier remains planned |
 
-## Optional live demonstration
 
-On the student's original database, run the read-only queries in `docs/VERIFY_DATABASE.cypher`. A newly installed empty Neo4j instance cannot reproduce the experiment from this repository alone. The original populated database or a validated snapshot is required.
-
-The offline audit verifies stored evidence. It neither reruns training nor independently verifies every original report or relationship.
