@@ -107,4 +107,4 @@ The future study will test entity-only versus entity-plus-STIX-relationship feat
 
 B. Gulbay and M. Demirci, “APT-scope: A novel framework to predict advanced persistent threat groups from enriched heterogeneous information network of cyber threat intelligence,” *Engineering Science and Technology, an International Journal*, vol. 57, 101791, 2024. https://doi.org/10.1016/j.jestch.2024.101791
 
-Repository used during the original session: https://github.com/Iqra2030/apt-scope. The historical source commit was not captured in the supplied archive. This reconstruction does not claim authorship of APT-Scope or redistribute its report corpus. Third-party data/code retain their original terms.
+**Disclaimer:** This reconstruction does not claim authorship of APT-Scope or redistribute its report corpus. Third-party data/code retain their original terms.
