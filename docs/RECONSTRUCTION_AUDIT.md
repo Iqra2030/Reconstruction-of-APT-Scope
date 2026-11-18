@@ -1,7 +1,5 @@
 # Reconstruction audit
 
-Source: supplied APT_Scope_Reconstruction_Audit.docx. Text and tables transcribed for GitHub review.
-
 APT Scope Reconstruction and Results Audit
 
 Iqra Ilyas | MS Cybersecurity | 25i-7703
